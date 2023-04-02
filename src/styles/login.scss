@@ -1,0 +1,99 @@
+/* login */
+
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .Login__container {
+    background-color: white;
+    display: grid;
+    width: 90vw;
+    height: 90vh;
+    max-width: 1000px;
+    max-height: 600px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+  }
+  
+  .Form__container {
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .Form__header {
+    margin-top: 0;
+  }
+  
+  .Form__input {
+    width: 300px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  
+  .Form__checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .Form__input-label {
+    margin-bottom: 5px;
+  }
+  
+  .Form__button {
+    margin: 0;
+    padding: 15px 50px;
+    font-size: 20px;
+    background-color: #e44b40;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    border: 1px solid #f0938c;
+  }
+  
+  .Form__buttons {
+    a {
+      margin-top: 10px;
+    }
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .backgrounds {
+    color: white;
+    padding: 50px;
+    background-image: url(../assets/bg_bggenerator_com.jpg);
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+  
+    /* align-items: stretch; */
+    justify-content: flex-end;
+  
+    h1 {
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Login__container {
+      grid-template-columns: 1fr;
+      grid-template-rows: [inicio] 217px [fila1] auto [final];
+      max-height: 1000px;
+    }
+  
+    .backgrounds {
+      grid-row: inicio/fila1;
+      border-radius: 10px 10px 0px 0px;
+    }
+  }

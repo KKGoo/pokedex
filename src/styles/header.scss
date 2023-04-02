@@ -1,0 +1,21 @@
+.Header {
+    background-color: #375daa;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+  }
+  
+  .Header__title {
+    margin-left: 30px;
+  }
+  
+  .Header__menu {
+    position: absolute;
+    margin-top: 100px;
+    right: 0;
+  }
+  
